@@ -1,136 +1,142 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
-  "animation": {
-    "enabled": true,
-    "duration": 400,
-    "style": "EaseOutBack",
-    "fps": 120
-  },
-  "window_hiding_behaviour": "Cloak",
-  "cross_monitor_move_behaviour": "Insert",
-  "mouse_follows_focus": false,
-  "default_workspace_padding": 10,
-  "default_container_padding": 10,
-  "border": true,
-  "border_implementation": "Komorebi",
-  "border_width": 5,
-  "border_offset": -1,
-  "border_style": "Rounded",
-  "theme": {
-    "palette": "Catppuccin",
-    "name": "Mocha",
-    "unfocused_border": "Surface0",
-    "single_border": "Mauve",
-    "monocle_border": "Green",
-    "floating_border": "Sapphire",
-    "stack_border": "Peach",
-    "stackbar_background": "Base",
-    "stackbar_unfocused_text": "Overlay0",
-    "stackbar_focused_text": "Peach"
-  },
-  "stackbar": {
-    "height": 35,
-    "mode": "OnStack",
-    "tabs": {
-      "width": 300,
-      "font_family": "FantasqueSansM Nerd Font",
-      "font_size": 30
-    }
-  },
-  "transparency": false,
-  "ignore_rules": [
-    {
-      "kind": "Exe",
-      "id": "explorer.exe",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Title",
-      "id": "Settings",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Exe",
-      "id": "yasb.exe",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Title",
-      "id": "Microsoft Store",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Exe",
-      "id": "vmware.exe",
-      "matching_strategy": "Equals"
-    }
-  ],
-  "monitors": [
-    {
-      "work_area_offset": {
-        "bottom": 0,
-        "left": 0,
-        "right": 0,
-        "top": 0
-      },
-      "workspaces": [
-        {
-          "name": "1",
-          "layout": "BSP"
-        },
-        {
-          "name": "2"
-        },
-        {
-          "name": "3",
-          "layout": "UltrawideVerticalStack"
-        },
-        {
-          "name": "4",
-          "layout": "RightMainVerticalStack"
-        },
-        {
-          "name": "5",
-          "layout": "HorizontalStack"
-        },
-        {
-          "name": "6",
-          "layout": "Grid"
-        }
-      ]
-    },
-    {
-      "workspaces": [
-        {
-          "name": "1",
-          "layout": "BSP"
-        },
-        {
-          "name": "2",
-          "layout": "VerticalStack"
-        },
-        {
-          "name": "3",
-          "layout": "Grid"
-        }
-      ]
-    },
-    {
-      "workspaces": [
-        {
-          "name": "1",
-          "layout": "BSP"
-        },
-        {
-          "name": "2",
-          "layout": "VerticalStack"
-        },
-        {
-          "name": "3",
-          "layout": "Grid"
-        }
-      ]
-    }
-  ]
+	"$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+	"app_specific_configuration_path": "C:/Users/jacki/Documents/GitHub/windots/config/config/komorebi/applications.json",
+	"animation": {
+		"enabled": true,
+		"duration": 400,
+		"style": "EaseOutBack",
+		"fps": 120
+	},
+	"window_hiding_behaviour": "Cloak",
+	"cross_monitor_move_behaviour": "Insert",
+	"mouse_follows_focus": false,
+	"default_workspace_padding": 10,
+	"default_container_padding": 10,
+	"border": true,
+	"border_implementation": "Komorebi",
+	"border_width": 3,
+	"border_offset": -1,
+	"border_style": "Rounded",
+	"theme": {
+		"palette": "Catppuccin",
+		"name": "Mocha",
+		"unfocused_border": "Surface0",
+		"single_border": "Mauve",
+		"monocle_border": "Green",
+		"floating_border": "Sapphire",
+		"stack_border": "Peach",
+		"stackbar_background": "Base",
+		"stackbar_unfocused_text": "Overlay0",
+		"stackbar_focused_text": "Peach"
+	},
+	"stackbar": {
+		"height": 35,
+		"mode": "OnStack",
+		"tabs": {
+			"width": 300,
+			"font_family": "FantasqueSansM Nerd Font",
+			"font_size": 30
+		}
+	},
+	"transparency": true,
+	"ignore_rules": [
+		{
+			"kind": "Exe",
+			"id": "yasb.exe",
+			"matching_strategy": "Equals"
+		}
+	],
+	"monitors": [
+		// monitor 1, index 0
+		{
+			"workspaces": [
+				{
+					"name": "I",
+					"layout": "BSP"
+				},
+				{
+					"name": "II",
+					"layout": "VerticalStack"
+				},
+				{
+					"name": "III",
+					"layout": "HorizontalStack"
+				}
+			]
+		},
+		// monitor 2, index 1
+		{
+			"workspaces": [
+				{
+					"name": "1",
+					"layout": "BSP"
+				},
+				{
+					"name": "2",
+					"layout": "VerticalStack"
+				},
+				{
+					"name": "3",
+					"layout": "HorizontalStack"
+				}
+			]
+		},
+		// monitor 3, index 2
+		{
+			"workspaces": [
+				{
+					"name": "1",
+					"layout": "BSP"
+				},
+				{
+					"name": "2",
+					"layout": "VerticalStack"
+				},
+				{
+					"name": "3",
+					"layout": "HorizontalStack"
+				}
+			]
+		},
+		// monitor 4, index 3
+		{
+			"workspaces": [
+				{
+					"name": "1",
+					"layout": "BSP"
+				},
+				{
+					"name": "2",
+					"layout": "VerticalStack"
+				},
+				{
+					"name": "3",
+					"layout": "HorizontalStack"
+				}
+			]
+		}, // monitor 5, index 4
+		{
+			"workspaces": [
+				{
+					"name": "1",
+					"layout": "BSP"
+				},
+				{
+					"name": "2",
+					"layout": "VerticalStack"
+				},
+				{
+					"name": "3",
+					"layout": "HorizontalStack"
+				}
+			]
+		}
+	],
+	"display_index_preferences": {
+		"0": "SAM0D2C-5&ba0a908&0&UID4354",
+		"1": "SAM0D2C-5&1f08c561&0&UID518",
+		"2": "AUS3438-5&1f08c561&0&UID517",
+		"3": "GSM7817-5&ba0a908&0&UID4352",
+		"4": "TMX1401-5&1f08c561&0&UID512"
+	}
 }
